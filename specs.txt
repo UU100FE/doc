@@ -1,0 +1,13 @@
+image size:
+    icon_sd         248  x 140
+    icon_hd         336  x 210
+
+    splash_sd       720  x 480
+    splash_hd       1280 x 720
+    splash_fhd      1920 x 1080
+
+    background_sd   720  x 480
+    background_hd   1280 x 720
+    background_fhd  1920 x 1080
+
+    focus_border    100x100  * filename extension must end with 9.png, it will be devided into 9 parts for extension automatically.
