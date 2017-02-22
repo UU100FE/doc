@@ -23,6 +23,7 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
 | id   | int | false | 专辑ID |
 | description | String | false | 简介 |
 | name | String | false | 专辑名称 |
+| en_name | String | false | 英语专辑名称 |
 | isTitle | boolean | false | 是否是专辑级别 |
 | type | int | false | 1 电视剧， 2 电影， 3 综艺， 4 直播， 5 应用 ... |
 | poster | String | false | 专辑海报 |
@@ -52,6 +53,7 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
   {
      "id": "834adfc2368f11e1b52a",
      "name": "宫锁珠帘",
+     "en_name": "hh",
      "description": "雍正年间，候补四品典仪凌柱之女怜儿为父请命结识十七王爷胤礼，二人两情依依，本要结为夫妇，没想到胤礼为救老师阿灵阿，不得已娶了阿灵阿之女嘉嘉为妻，伤心欲绝的怜儿在深宫里步步为营，渴望能走出深宫过平凡的日子，不想却被宫中各股势力所利用，李卫要跟她结盟，大太监苏培盛要向她报恩，亲如姐妹的玉漱出卖她，表面和谐的深宫里埋藏着各种秘密，就在怜儿快喘不过气时，她意外地被雍正看中，成为了万千宠爱于一身的熹妃，而就在这时，她忽然发现所有的事情一下子都变复杂了，停下来就会被迫害，走下去可能连自己也不认识自己了，在三岔路口，她选择了相信阳光，相信暴风雨总会过去的，于是在她坚忍不拔的努力下，终于为自己闯出了一片天。",
      "isTitle": true,
      "poster": "http://res.mfs.ykimg.com/050D00004FB317B60000015BB40555AE",
