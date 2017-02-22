@@ -24,12 +24,15 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
 | description | String | false | 简介 |
 | name | String | false | 专辑名称 |
 | isTitle | boolean | false | 是否是专辑级别 |
+| type | int | false | 1 电视剧， 2 电影， 3 综艺， 4 直播， 5 应用 ... |
 | poster | String | false | 专辑海报 |
+| carousel_episodes | array | false | 轮播 |
 | backgroundPoster | String | false | 专辑大海报当背景 |
 | directors | String | false | 导演 |
 | actors | String | false | 演员 |
 | host | String | true | 主持人 |
 | tv_station | String | true | 电视台 |
+| voice | String | true | 配音演员 |
 | rating | String | false | 评分 |
 | genre | String | false | 类型， 多个用逗号分隔 |
 | episode_count | int | false | 总剧集 |
@@ -52,6 +55,29 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
      "description": "雍正年间，候补四品典仪凌柱之女怜儿为父请命结识十七王爷胤礼，二人两情依依，本要结为夫妇，没想到胤礼为救老师阿灵阿，不得已娶了阿灵阿之女嘉嘉为妻，伤心欲绝的怜儿在深宫里步步为营，渴望能走出深宫过平凡的日子，不想却被宫中各股势力所利用，李卫要跟她结盟，大太监苏培盛要向她报恩，亲如姐妹的玉漱出卖她，表面和谐的深宫里埋藏着各种秘密，就在怜儿快喘不过气时，她意外地被雍正看中，成为了万千宠爱于一身的熹妃，而就在这时，她忽然发现所有的事情一下子都变复杂了，停下来就会被迫害，走下去可能连自己也不认识自己了，在三岔路口，她选择了相信阳光，相信暴风雨总会过去的，于是在她坚忍不拔的努力下，终于为自己闯出了一片天。",
      "isTitle": true,
      "poster": "http://res.mfs.ykimg.com/050D00004FB317B60000015BB40555AE",
+     "carousel_episodes": [
+       {
+          "id" : "2a7260de1faa11e097c0",
+          "name" : "裸婚时代01",
+          "description" : "裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代",
+          "play_url" : "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+          "poster" : "http://g4.ykimg.com/0100641F464E1FC...",
+          "thumbnail" : "http://g4.ykimg.com/0100641F464E1FC...",
+          "streamtypes" : ["hd2,flvhd,flv,hd,3gp,3gphd"],
+          "view_count" : "345037980",
+       },
+       {
+          "id" : "2a7260de1faa11e097c0",
+          "name" : "裸婚时代01",
+          "description" : "裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代",
+          "play_url" : "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+          "poster" : "http://g4.ykimg.com/0100641F464E1FC...",
+          "thumbnail" : "http://g4.ykimg.com/0100641F464E1FC...",
+          "streamtypes" : ["hd2,flvhd,flv,hd,3gp,3gphd"],
+          "view_count" : "345037980",
+       }
+       ...
+     ],
      "backgroundPoster": "http://res.mfs.ykimg.com/050D00004FB317B60000015BB40555AE",
      "director": "李慧珠",
      "actors": "杜淳、何晟铭、袁姗姗、舒畅",
@@ -110,7 +136,11 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
               "id" : "2a7260de1faa11e097c0",
               "name" : "裸婚时代01",
               "description" : "裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代",
-              "play_url" : "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+              "play_url" :{
+                "l": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+                "m": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+                "h": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html"
+              } ,
               "poster" : "http://g4.ykimg.com/0100641F464E1FC...",
               "thumbnail" : "http://g4.ykimg.com/0100641F464E1FC...",
               "streamtypes" : ["hd2,flvhd,flv,hd,3gp,3gphd"],
@@ -120,7 +150,11 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
               "id" : "2a7260de1faa11e023er",
               "name" : "裸婚时代02",
               "description" : "裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代",
-              "play_url" : "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+              "play_url" :{
+                "l": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+                "m": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+                "h": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html"
+              } ,
               "poster" : "http://g4.ykimg.com/0100641F464E1FC...",
               "thumbnail" : "http://g4.ykimg.com/0100641F464E1FC...",
               "streamtypes" : ["hd2,flvhd,flv,hd,3gp,3gphd"],
@@ -166,7 +200,11 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
    "id" : "2a7260de1faa11e097c0",
    "name" : "裸婚时代",
    "description" : "裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代裸婚时代",
-   "play_url" : "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+   "play_url" :{
+     "l": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+     "m": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html",
+     "h": "http://v.youku.com/v_show/id_XMjc0MzM1OTgw.html"
+   } ,
    "poster" : "http://g4.ykimg.com/0100641F464E1FC...",
    "thumbnail" : "http://g4.ykimg.com/0100641F464E1FC...",
    "streamtypes" : ["hd2,flvhd,flv,hd,3gp,3gphd"],
