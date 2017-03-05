@@ -213,3 +213,101 @@ http://www.ruanyifeng.com/blog/2014/05/restful_api.html
    "view_count" : "345037980",
 }
 ```
+## 根据频道Id获取频道数据
+
+### 接口
+
+| url |    https://api.example.com/v1/getChannelsById.json/     |
+| ------------- | ----------- |
+| HTTP方法    | get |
+| 返回格式     | json    |
+
+### 参数
+
+| 参数  | 类型 | 允许为空 | 说明 |
+| :---- |:----:| :-----:| :-----:|
+| channelId   | int | false | 专辑Id |
+
+### 返回结果
+
+| 参数  | 类型 | 允许为空 | 说明 |
+| :---- |:----:| :-----:| :-----:|
+| id   | int | false | 专辑ID |
+| description | String | false | 简介 |
+| name | String | false | 专辑名称 |
+| en_name | String | false | 英语专辑名称 |
+| isTitle | boolean | false | 是否是专辑级别 |
+| type | int | false | 1 电视剧， 2 电影， 3 综艺， 4 直播， 5 应用 ... |
+| poster | String | false | 专辑海报 |
+| carousel_episodes | array | false | 轮播 |
+| backgroundPoster | String | false | 专辑大海报当背景 |
+| directors | String | false | 导演 |
+| actors | String | false | 演员 |
+| host | String | true | 主持人 |
+| tv_station | String | true | 电视台 |
+| voice | String | true | 配音演员 |
+| rating | String | false | 评分 |
+| genre | String | false | 类型， 多个用逗号分隔 |
+| episode_count | int | false | 总剧集 |
+| episode_updated | int | true | 更新至 |
+| view_count | int | false | 总播放次数 |
+| area | int | false | 地区 |
+| category | string | false | 分类 电视剧 电影 |
+| episodes | array | false | 剧集数组 |
+| released | string | false | 节目发行时间 (YYYY-MM-DD) |
+| state | string | false | 节目状态: normal - 正常 limited - 分级 check - 待审 checking- 审核 blocked - 屏蔽 deleted - 删除 delayed - 延审 paycheck-付费待审 |
+| copyright_status | string | false | 节目授权状态 auchorized 已授权 public 公共版权 falseauth 伪授权 unknow 版权未知 expired 版权过期 unauthorized 无版权 |
+
+### JSON
+
+```json
+{
+  "name": "应用",
+  "is_title": false,
+  "id": 1234567,
+  "en_name": "Application",
+  "description": "世纪优优（天津）文化传播股份有限公司（简称：世纪优优；股票名称：世纪优优；股票代码：837666）创办于2012年，是一家全球数字娱乐视频供应商，是中国地区较早开发海外业务、也是目前中国影视推广海外、全球范围内渠道较大的海外全媒体发行运营商。",
+  "landscape_poster": null,
+  "portrait_poster": null,
+  "background_poster": null,
+  "masked_background_poster": null,
+  "genreListItems": [{
+          "id": 1913,
+          "name": "甄嬛传",
+          "position": 1122416520,
+          "source_url": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+          "stream_url": null,
+          "landscape_poster": null,
+          "portrait_poster": "http://7xoboh.com1.z0.glb.clouddn.com/003.png",
+          "free": false,
+          "livestream": false,
+          "description": "世纪优优（天津）文化传播股份有限公司 是一家全球数字娱乐视频供应商，是中国地区较早开发海外业务、也是目前中国影视推广海外、全球范围内渠道较大的海外全媒体发行运营商",
+          "background_poster": null,
+          "thumbnail": null,
+          "blocked_channels": [],
+          "blocked_countries": [],
+          "thumbnail_interval": 10,
+          "masked_background_poster": null
+      },
+      {
+          "id": 1914,
+          "name": "琅琊榜",
+          "position": 1122416520,
+          "source_url": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+          "stream_url": null,
+          "landscape_poster": null,
+          "portrait_poster": "http://7xoboh.com1.z0.glb.clouddn.com/004.png",
+          "free": false,
+          "livestream": false,
+          "description": "世纪优优（天津）文化传播股份有限公司 是一家全球数字娱乐视频供应商，是中国地区较早开发海外业务、也是目前中国影视推广海外、全球范围内渠道较大的海外全媒体发行运营商",
+          "background_poster": null,
+          "thumbnail": null,
+          "blocked_channels": [],
+          "blocked_countries": [],
+          "thumbnail_interval": 10,
+          "masked_background_poster": null
+      }
+  ]
+}
+
+```
